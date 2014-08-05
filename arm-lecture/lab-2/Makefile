@@ -17,7 +17,7 @@ mutex.o: mutex.s
 	$(CC) -c $(CFLAGS) -o $@ $<
 
 %.o: %.s
-	$(CC) -c $(CFLAGS) -o $@ $<
+	$(CC) -c $(CFLAGS) -o $@ $< 
 
 clean:
 	rm -f $(objects) atomic
