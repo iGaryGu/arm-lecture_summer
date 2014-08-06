@@ -24,8 +24,8 @@ lock_mutex:
 	.type unlock_mutex, function
 unlock_mutex:
 	ldr r1, =unlocked
-	str r1,[r0]
 	dsb
+	str r1,[r0]
 	bx lr
 	.size unlock_mutex, .-unlock_mutex
 
