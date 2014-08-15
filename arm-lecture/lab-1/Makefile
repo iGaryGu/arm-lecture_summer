@@ -11,7 +11,7 @@ default: fibseq
 fibseq: $(objects)
 	$(CC) $(LDFLAGS) -o $@ $^
 
-fib.o: fib2.s
+fib2.o: fib2.s
 fibseq.o: fibseq.c
 
 %.o: %.c
