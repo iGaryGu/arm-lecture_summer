@@ -14,7 +14,7 @@ example1: $(objects)
 example1.o: example1.c
 
 %.o: %.c
-	$(CC) -c $(CFLAGS) $(LDFLAGS) -o $@ $<
+	$(CC) -c $(CFLAGS) $(LDFLAGS) -o $@ -mcpu=cortex-a15 $< 
 
 clean:
 	rm -f $(objects) example1
